@@ -19,3 +19,7 @@
   - memo() would just perform a meaningless check in such cases(which costs performance)
 
 #### 2. Clever Component Composition in your Application
+
+#### Understaing the useCallback() hook
+
+-
