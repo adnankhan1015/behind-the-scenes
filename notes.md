@@ -23,3 +23,10 @@
 #### Understaing the useCallback() hook
 
 -
+
+#### WHy keys Matter When Managing State!!
+
+- State is scoped to a component, if you use the same component function to create multiple component instances based on thta function every instance has its own isolated state.
+- However, that is not the entire truth. Instead state is also tracked by position by REACT.
+
+- State belongs to the position as well as the component type, the component here in the HistoryItem jumps from one component to another component
