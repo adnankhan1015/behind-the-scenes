@@ -30,3 +30,15 @@
 - However, that is not the entire truth. Instead state is also tracked by position by REACT.
 
 - State belongs to the position as well as the component type, the component here in the HistoryItem jumps from one component to another component
+
+#### State Scheduling & Batching
+
+- **Batching** Simply means that multiple state updates that are trigger from the same function, for example are batched together and will only lead to one component function execution.
+
+```
+  function handleSetCount(newCount) {
+    setChosenCount(newCount);
+    setChosenCount((prevChosenCount) => prevChosenCount + 1);
+    console.log("chosencount", chosenCount); // This won't work
+  }
+```
